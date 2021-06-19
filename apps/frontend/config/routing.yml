@@ -1,0 +1,128 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# ==================================================================
+# rules
+# ==================================================================
+shobu_type:
+  url:   /shobu/:type
+  param: { module: top, action: detail, placeId:101, place:shobu, placeName:しょうぶ学園 }
+
+shobu:
+  url:   /shobu
+  param: { module: top, action: detail, placeId:101, place:shobu, placeName:しょうぶ学園 }
+
+link_check_art:
+  url:   /link/check_flag/:check_flag/art
+  param: { module: top, action: link, place:link, type:art }
+
+link_check_art2:
+  url:   /link/art
+  param: { module: top, action: link, place:link, type:art }
+
+link_check_list:
+  url:   /link/list
+  param: { module: top, action: link, place:link, type:art }
+
+link_check_detail:
+  url:   /link/check_flag/:check_flag/:current
+  param: { module: top, action: link, place:link  }
+
+link_check:
+  url:   /link/check_flag/:check_flag
+  param: { module: top, action: link, place:link  }
+
+link_art:
+  url:   /link/art
+  param: { module: top, action: link, place:link, type:art }
+
+link_detail:
+  url:   /link/:current
+  param: { module: top, action: link, place:link  }
+
+link:
+  url:   /link
+  param: { module: top, action: link, place:link, type:art  }
+
+twitter_height:
+  url:   /twitter/:placeId/height/:height
+  param: { module: top, action: twitter  }
+
+twitter_h:
+  url:   /tw/:placeId/height/:height
+  param: { module: top, action: twitter  }
+
+twitter:
+  url:   /tw/:placeId
+  param: { module: top, action: twitter  }
+
+board:
+  url:   /board
+  param: { module: top, action: board  }
+
+board2:
+  url:   /board2
+  param: { module: top, action: board  }
+
+test:
+  url:   /test
+  param: { module: top, action: board  }
+
+event_detail:
+  url:   /event/:place
+  param: { module: top, action: event  }
+
+event:
+  url:   /event
+  param: { module: top, action: event  }
+
+art:
+  url:   /art
+  param: { module: top, action: art, type:1  }
+
+product:
+  url:   /product
+  param: { module: top, action: product, type:2  }
+
+food:
+  url:   /food
+  param: { module: top, action: work, type:3  }
+
+timeline:
+  url:   /timeline
+  param: { module: top, action: timeline  }
+
+# ==================================================================
+# slash
+# ==================================================================
+link_slash:
+  url:   /link/
+  param: { module: top, action: link, place:link, type:art  }
+
+board_slash:
+  url:   /board/
+  param: { module: top, action: board  }
+
+event_slash:
+  url:   /event/
+  param: { module: top, action: event  }
+
+shobu_slash:
+  url:   /shobu/
+  param: { module: top, action: detail, placeId:101, place:shobu, placeName:しょうぶ学園 }
+
+# ==================================================================
+# default rules
+# ==================================================================
+homepage:
+  url:   /
+  param: { module: top, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

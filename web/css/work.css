@@ -1,0 +1,277 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+html, body {
+  min-width: 1024px;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+html, body, .plain {
+ height: 100%;
+} 
+body {
+  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+.box {
+ margin-top: 0em; 
+ margin-bottom: 0em; 
+ padding: 1px 1em;
+}
+#main #contents .box {
+list-style-position: inside;
+}
+.block {
+  position: absolute;
+  overflow: auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input, abbr, article, aside, command, details, figcaption, figure, footer, header, hgroup, mark, meter, nav, output, progress, section, summary, time {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none outside;
+}
+.sub-nav {
+  color: #aaa;
+  text-shadow: rgb(77, 77, 77) 0px 1px 1px;
+  position: absolute;
+  right: 50%;
+  top: 95%;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#progress-nav3 {
+  z-index: 1;
+  width: 100%;
+  margin-top: 200px;
+  margin-left: 10px;
+}
+
+#progress-nav {
+  position: absolute;
+  z-index: 100;
+  margin-top: -32px;
+  right: 17px;
+  top: 50%;
+  opacity: 1;
+  pointer-events: none;
+}
+#progress-nav li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+}
+#progress-nav li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+#progress-nav.on {
+  pointer-events: auto;
+}
+#progress-nav li a .dot {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  background: #aaa;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+#progress-nav li a.active .dot {
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #aaa;
+  background: transparent;
+}
+#progress-nav li a {
+  cursor: pointer;
+}
+#progress-nav li a .hover-text {
+  position: absolute;
+  top: -3px;
+  right: 12px;
+  padding-right: 13px;
+  width: 250px;
+  opacity: 0;
+  font-size: 1em;
+  color: #aaa;
+  text-align: right;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#progress-nav2 {
+/*  right: 60px;
+  padding-top: 70px;
+  bottom: -10px
+  left: 40%;
+  z-index: 100;
+  margin-top: -30px;
+  right: 67px;
+  top: 50%;
+  background: #fff;
+*/  
+  opacity: 0.5;
+  pointer-events: none;
+}
+#progress-nav2 li {
+  display: block;
+  float: left;
+  width: 28px;
+  height: 26px;
+  overflow: hidden;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  margin: 0px;
+}
+#progress-nav2 li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+#progress-nav2.on {
+  pointer-events: auto;
+}
+#progress-nav2 li a .dot {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  background: #0A0101;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+#progress-nav2 li a.active .dot {
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #0A0101;
+  background: transparent;
+}
+#progress-nav2 li a .dot2 {
+  background: #fff;
+}
+#progress-nav2 li a.active .dot2 {
+  border: 1px solid #fff;
+}
+#progress-nav2 li a {
+  cursor: pointer;
+}
+#progress-nav2 li a .hover-text {
+  position: absolute;
+  top: -3px;
+  right: 12px;
+  padding-right: 13px;
+  width: 250px;
+  opacity: 0;
+  font-size: 1em;
+  color: #aaa;
+  text-align: right;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.navi .dot_circle_blue ul {
+  margin: 0;
+  padding: 0;
+}
+#siteheader, #sitefooter, #pageheader, #pagefooter, #main, section[data-id^="panel"] .plate .panel-title, section[data-id^="panel"] .plate .panel-description, .clearfix {
+  zoom: 1;
+}
+.clearfix {
+  zoom: 1;
+}
+.navi .dot_circle_blue li {
+  display: block;
+  float: left;
+  width: 28px;
+  height: 26px;
+  overflow: hidden;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.link_url:hover{ 
+  color: #A9A9A9; 
+  opacity:0.7; 
+}
+.box1 {
+  background-color: transparent; background-attachment: scroll; background-size: cover; left: 200%; background-position: 50% 50%; background-repeat: no-repeat no-repeat; height:100%;
+}
+.box2 {
+  background-color: transparent; background-attachment: scroll; background-size: auto; width: 1170px; height: 546px; background-position: 0% 0%; background-repeat: repeat repeat;
+}
+.block1 {
+  background-color: transparent; background-attachment: scroll; background-size: auto; top: 130px; left: 164px; height: 485px; width: 45%; overflow: auto; background-position: 0% 0%; background-repeat: repeat repeat;
+}
+.block2 {
+  background-color: transparent; background-attachment: scroll; background-size: auto; 
+  left: 130px; 
+  width: 95%; 
+  height: 485px; 
+  overflow: auto; 
+  background-position: 0% 0%; background-repeat: no-repeat no-repeat;
+}
+.font_min {
+  font-family:ヒラギノ明朝 pro w3,hiragino mincho pro,ｍｓ ｐ明朝,serif;  
+}
+.font_go {
+  font-family:ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,メイリオ,meiryo,ｍｓ ｐゴシック,sans-serif 
+}
+.font_color_b {
+  color:#333333;
+}
+.font_color_w {
+  color:#FCF8F8;
+}
+.font_shadow_b {
+  text-shadow: rgb(255, 255, 255) 0px 1px 1px;
+}
+.font_shadow_w {
+  text-shadow: rgb(0, 0, 0) 0px 1px 1px;
+}
+.placeholder2 {
+  opacity: 1; height: 15px;  z-index: 152; position:absolute;/*bottom:0; width: 100%;*/ 
+}
+
+#progress-nav li a .hover-text2 {
+  color: #535050;
+}
+#progress-nav li a.active .dot2 { 
+  color: #535050; 
+}

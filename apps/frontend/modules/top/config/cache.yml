@@ -1,0 +1,13 @@
+
+board:
+  enabled:     true
+  with_layout: true
+
+board2:
+  enabled:     true
+  with_layout: true
+
+test:
+  enabled:     true
+  with_layout: true
+  

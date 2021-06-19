@@ -1,0 +1,41 @@
+
+.ingrid { margin: 0 -1em; padding: 0; clear: both; list-style: none; letter-spacing: -0.4em; word-spacing: -0.43em;}
+.unit,
+.field-unit { margin: 0; display: inline-block; letter-spacing: normal; word-spacing: normal; vertical-align: top;}
+.field-unit { display: block;}
+.unit,
+.field-unit { padding: 0 1em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+.ingrid { *letter-spacing: normal; *zoom: 1;}
+.unit { *display: inline;}
+.unit,
+.field-unit { *margin-right: -1px; *padding: 0; *zoom: 1;}
+.in-halves    >   .unit   { width: 50%; }
+.in-thirds    >   .unit   { width: 33.33333%; }
+.in-fourths   >   .unit   { width: 25%; }
+.in-fifths    >   .unit   { width: 20%; }
+.in-sixths    >   .unit   { width: 16.66666%; }
+.in-sevenths  >   .unit   { width: 14.28571%; }
+
+/* Spatial units in thirds */
+.in-thirds    >   .span-two   { width: 75%; }
+
+/* Spatial units in fourths */
+.in-fourths   >   .span-two   { width: 50%; }
+.in-fourths   >   .span-three { width: 100%; }
+
+.in-fifths    >   .span-two   { width: 40%; }
+.in-fifths    >   .span-three { width: 60%; }
+.in-fifths    >   .span-four  { width: 80%; }
+
+.in-sixths    >   .span-two   { width: 33.33333%; }
+.in-sixths    >   .span-three { width: 50%; }
+.in-sixths    >   .span-four  { width: 66.66666%; }
+.in-sixths    >   .span-five  { width: 83.33333%; }
+
+.in-sevenths  >   .span-two   { width: 28.57142%; }
+.in-sevenths  >   .span-three { width: 42.85714%; }
+.in-sevenths  >   .span-four  { width: 57.14285%; }
+.in-sevenths  >   .span-five  { width: 71.42857%; }
+.in-sevenths  >   .span-six   { width: 85.71428%; }
+

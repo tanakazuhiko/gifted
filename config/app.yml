@@ -1,0 +1,888 @@
+# ================================================================
+# ■ dev
+# ================================================================
+dev:
+  url:
+    home:               https://dev.gftd.me
+
+# ================================================================
+# ■ stg
+# ================================================================
+stg:
+  url:
+    home:               https://stg.gftd.me
+
+# ================================================================
+# ■ prod
+# ================================================================
+prod:
+  url:
+    home:               https://gftd.me
+
+# ================================================================
+# ■全ての環境共通の設定
+# ================================================================
+all:
+
+  # ================================================
+  # ■<title>設定 (モジュール名/アクション名で設定)
+  # ================================================
+  title:
+    top:
+#     index:            gifted; 神様のおくりもの
+      index:            リンク
+      detail:           しょうぶ学園
+      newslist:         お知らせ一覧
+      newsdetail:       お知らせ詳細
+      contactinput:     お問い合わせ
+      contactcreate:    お問い合わせ
+      contactcomplete:  お問い合わせ完了
+      alert:            有効期限のお知らせ
+      link:             リンク
+      event:            イベント
+      board:            ダッシュボード
+      timeline:         タイムライン
+      art:              アート
+      product:          プロダクト
+      food:             フード
+
+    member:
+      preinput:         アカウント登録
+      precreate:        アカウント登録
+      precomplete:      確認メール送信完了
+      registinput:      アカウント登録入力
+      registcreate:     アカウント登録入力
+      registcomplete:   アカウント登録完了
+      login:            ログイン
+      logout:           ログアウト
+      pwinput:          パスワードリマインダー
+      pwcreate:         パスワードリマインダー
+      pwcomplete:       リマインダーメール送信完了
+      remind:           リマインダーパスワード設定
+      remindcreate:     リマインダーパスワード設定
+      remindcomplete:   パスワード再設定完了
+      editinput:        登録情報編集
+      editcreate:       登録情報編集
+      mailinput:        メールアドレス変更
+      mailcreate:       メールアドレス変更
+      mailcomplete:     変更メール送信完了
+      mailauth:         メールアドレス変更完了
+      needpw:           PW再要求
+      exitinput:        退会
+      exitconfirm:      退会確認
+      exitcomplete:     退会完了
+      
+    mypage:
+      index:            Myページ
+      point:            ポイント詳細
+      orders:           購入済みカード
+      rank:             ランク履歴
+      card:             購入済みカード詳細
+      expire:           有効期限
+
+    product:
+      category:         各種プリペイドカード
+      list:             カード一覧
+      detail:           商品詳細
+  
+    orders:
+      input:            ご注文手続き
+      preconfirm:       ご注文内容の確認
+      confirm:          ご注文内容の確認
+      create:           購入完了
+      complete:         購入完了
+      cart:             ショッピングカート
+      credit:           クレジットカード情報の編集
+      bank:             ネットバンキングお支払い処理中
+
+    static:
+      howto:            ご利用方法
+      help:             ヘルプ
+      use:              利用規約
+      privacy:          プライバシーポリシー
+      company:          会社概要
+      business:         特定商取引
+      first:            初めての方
+      support:          サポート
+      merit:            便利でお得な理由
+      safety:           安心・安全の理由
+      recommend:        こんな人にお勧め
+      faq:              よくあるご質問一覧
+      faq2:             よくあるご質問詳細
+      contact:          お問い合わせ入力
+      contact2:         お問い合わせ完了
+      site:             サイトのご利用について
+      test:             test
+
+    common:
+      error:            エラー
+      error404:         ページが存在しません（404 エラー）
+      timeout:          タイムアウト
+
+  # メタ情報
+  meta_keywords:    "gifted,障害者,障碍者,福祉,施設,作業所,アート,しょうぶ学園,やまなみ工房"
+  meta_description: "「障害者」と呼ばれる人々は、「健常者」よりも劣った「社会の重荷」ではなく、「健常者」が喪ってしまった「何か」を私たちに思い出させてくれる、かけがえのない存在なのではないでしょうか。"
+  
+  meta_description_index:   "gifted; リンク" 
+  meta_description_link:    "gifted; リンク" 
+  meta_description_event:   "gifted; イベント情報" 
+  meta_description_board:   "gifted; SNSダッシュボード"
+  meta_description_shobu:   "gifted; しょうぶ学園" 
+  meta_description_detail:  "gifted; しょうぶ学園" 
+  
+  #========================================================
+  # ■一般
+  #========================================================
+  work_type:
+    array:
+      1: art
+      2: product
+      3: food
+  
+  work_type_art:      1
+  work_type_product:  2
+  work_type_food:     3
+  
+  # 商品種別
+  product_type:
+    array:
+      1: product
+      2: nui
+      3: art & craft
+      4: food
+      5: products
+      
+  product_type_product:   1
+  product_type_nui:       2
+  product_type_art:       3
+  product_type_food:      4
+  product_type_products:  5
+
+  # コメント種別
+  comment_type:
+    array:
+      1: interviews & words
+      2: reviews
+      3: blogs
+      4: comments
+      5: words
+      
+  comment_type_interview:  1
+  comment_type_review:     2
+  comment_type_blog:       3
+  comment_type_comment:    4
+  comment_type_word:       5
+
+  # ステータス
+  delete_flag:
+    array:
+      0: 有効
+      1: 無効
+      
+  delete_flag_active:   0
+  delete_flag_deleted:  1
+
+  # 都道府県
+  prefecture_id:
+    array:
+      1:  北海道
+      2:  青森県
+      3:  岩手県
+      4:  宮城県
+      5:  秋田県
+      6:  山形県
+      7:  福島県
+      8:  茨城県
+      9:  栃木県
+      10: 群馬県
+      11: 埼玉県
+      12: 千葉県
+      13: 東京都
+      14: 神奈川県
+      15: 新潟県
+      16: 富山県
+      17: 石川県
+      18: 福井県
+      19: 山梨県
+      20: 長野県
+      21: 岐阜県
+      22: 静岡県
+      23: 愛知県
+      24: 三重県
+      25: 滋賀県
+      26: 京都府
+      27: 大阪府
+      28: 兵庫県
+      29: 奈良県
+      30: 和歌山県
+      31: 鳥取県
+      32: 島根県
+      33: 岡山県
+      34: 広島県
+      35: 山口県
+      36: 徳島県
+      37: 香川県
+      38: 愛媛県
+      39: 高知県
+      40: 福岡県
+      41: 佐賀県
+      42: 長崎県
+      43: 熊本県
+      44: 大分県
+      45: 宮崎県
+      46: 鹿児島県
+      47: 沖縄県
+      99: 日本国外
+      100: アメリカ
+      101: オランダ
+      102: フランス
+      103: イタリア
+      104: スイス
+
+  #========================================================
+  # ■件数関連
+  #========================================================
+  # 一覧表示件数
+  count:
+    event:             20
+    event_init:        10
+    comment:            5
+    word:               5
+    interview:          5
+    review:             5
+    blog:               5
+
+  # ================================================
+  # ■メール関連
+  # ================================================
+  mail:
+    array:
+      from_name:        'gftd.me 事務局'
+      from_mail:        gftd.me@gmail.com
+      support_name:     'gftd.me 事務局'
+      support_mail:     gftd.me@gmail.com
+      admin_name:       'gftd.me 事務局'
+      admin_mail:       gftd.me@gmail.com
+      mainte_name:      'gftd.me 事務局'
+      mainte_mail:      gftd.me@gmail.com
+      member_name:      'gftd.me 事務局'
+      member_mail:      gftd.me@gmail.com
+      order_name:       'gftd.me 事務局'
+      order_mail:       gftd.me@gmail.com
+      magazine_name:    'gftd.me 事務局'
+      magazine_mail:    gftd.me@gmail.com
+
+      subject_pre:      "[gftd.me] アカウントの仮登録のお知らせ"
+      subject_register: "[gftd.me] アカウント登録完了のお知らせ"
+      subject_pw:       "[gftd.me] パスワードの再発行手続き"
+      subject_exit:     "[gftd.me] 退会手続きが完了しました"
+      subject_update:   "[gftd.me] メールアドレスの変更手続き"
+      subject_orders:   "[gftd.me] ご注文が完了しました"
+      subject_payment:  "[gftd.me] ご購入が完了しました"
+      subject_cancel:   "[gftd.me] ご注文商品キャンセルのお知らせ"
+      subject_limit:    "[gftd.me] 商品代金のお支払いに関して"
+      subject_error:    "[gftd.me] エラーが発生しました"
+      subject_contact:          "[gftd.me] お問い合わせが完了しました"
+      subject_contact_support:  "[gftd.me] お問い合わせがありました"
+      subject_comment:          "[gftd.me] コメント投稿が完了しました"
+      subject_comment_support:  "[gftd.me] コメントの投稿がありました"
+
+      expires_time_register:  1440  # 24*60
+      expires_time_pw:        1440 
+
+  mail_magagine:
+
+    # メルマガ配信スリープ時間（マイクロ秒）500000=0.5秒
+    usleep_ms: 500000
+    
+  #========================================================
+  # ■会員関連
+  #========================================================
+  # 性別
+  gender:
+    array:
+      1: 男性
+      2: 女性
+
+  # メール受信フラグ
+  mail_flag:
+    array:
+      1: する
+      0: しない
+      
+  mail_flag_not_receive:  0
+  mail_flag_receive:      1
+    
+  # 会員種別
+  member_type:
+    array:
+      0: 通常
+      1: GREE経由
+      2: Mobage経由
+      3: Ameba経由
+
+  # 退会フラグ
+  quit_flag:
+    array:
+      0: 有効
+      1: 退会
+      2: ログイン停止
+      3: 強制退会
+      
+  quit_flag_active: 0
+  quit_flag_exit:   1
+  quit_flag_stop:   2
+  quit_flag_out:    3
+
+  # ランク
+  rank:
+    array:
+      0: レギュラー
+      1: シルバー
+      2: ゴールド
+      3: プラチナ
+      
+  rank_regular:   0
+  rank_silver:    1
+  rank_gold:      2
+  rank_plutinum:  3
+
+  # ランクアップ条件
+  rank_condition:
+    span:             3 month
+
+    regular_amount:   0
+    regular_type:     0
+
+    silver_amount:    10000
+    silver_type:      1
+
+    gold_amount:      30000
+    gold_type:        2
+
+    plutinum_amount:  100000
+    plutinum_type:    3
+
+  # 文字数制限
+  length:
+    name_min:   1
+    name_max:  10
+    pass_min:   8
+    pass_max:  16
+
+  # お問合せ種別
+  contact_type:
+    array:
+      1:  登録・退会について
+      2:  ログインについて
+      3:  購入について
+      4:  利用方法について
+      5:  ポイントについて
+      6:  その他
+      10: 法人のお客様
+
+  # 年令
+  age:
+    # 年令制限
+    min:   20
+
+    # 生まれた年デフォルト年齢
+    birth_year_default:   30
+
+  # ================================================
+  # ■商品関連
+  # ================================================
+  # 商品種別
+  product_type:
+    array:
+      1: GREE
+      2: Mobage
+      3: Ameba
+      4: music.jp
+
+  product_type_gree:    1
+  product_type_mobage:  2
+  product_type_ameba:   3
+  product_type_musicjp: 4
+
+  # 商品名
+  product_code:
+    array:
+      1: GREEプリペイドカード
+      2: Mobageモバコインカード
+      3: Amebaプリペイドカード
+      4: music.jp music card
+
+  # 商品名（一覧用）
+  product_code_list:
+    array:
+      1: gree
+      2: mobage
+      3: ameba
+      4: musicjp
+
+  # カテゴリ
+  category:
+    array:
+      1:  ソーシャルゲーム
+      2:  エンターテイメント
+      99: その他
+  
+  # 課税区分
+  tax_flag:
+    array:
+      0: 非課税
+      1: 税込 
+      
+  # 公開フラグ
+  public_flag:
+    array:
+      0: 非公開
+      1: 公開
+      
+  public_flag_close: 0
+  public_flag_open:  1
+
+  # 削除フラグ
+  delete_flag:
+    array:
+      0: 未削除
+      1: 削除
+      
+  delete_flag_not_deleted: 0
+  delete_flag_deleted:     1
+
+  # 返品済フラグ
+  return_flag:
+    array:
+      0: 未返品
+      1: 返品済
+      
+  return_flag_not_return:   0
+  return_flag_returned:     1
+
+  # 登録種別フラグ
+  type_flag:
+    array:
+      1: 新規登録
+      2: パスワードリマインダー
+      3: メールアドレス変更
+      
+  type_flag_new:   1
+  type_flag_pw:    2
+  type_flag_mail:  3
+
+  # おすすめ商品フラグ
+  recommend_flag:
+    array:
+      0: 通常
+      1: おすすめ
+      
+  recommend_flag_normal:    0
+  recommend_flag_recommend: 1
+
+  # 返品対象期間（有効期限：３ヶ月以下）
+  return_date_span:     +3 month
+
+  # ================================================
+  # ■注文関連
+  # ================================================
+  # お支払い方法
+  payment_type:
+    array:
+      1: クレジットカード
+#     3: 銀行振り込み
+      2: コンビニ支払い
+      4: ネットバンキング／銀行ATM（Pay-easy）
+      5: 全額ポイントで支払う
+#     6: paypal
+      
+  payment_type_credit:        1
+  payment_type_convenience:   2
+# payment_type_netbanking:    3
+  payment_type_payeasy:       4
+  payment_type_point:         5
+# payment_type_paypal:        6
+
+  # ポイント利用
+  point_flag:
+    array:
+      3: ポイントを利用しない
+      1: 全て利用する
+      2: 一部を利用する
+      
+  point_flag_all:       1
+  point_flag_part:      2
+  point_flag_none:      3
+
+  # 支払いコンビニ
+  convenience_type:
+    array:
+      # GMO 版
+      '00001':  ローソン
+      '00002':  ファミリーマート
+      '00003':  サンクス
+      '00004':  サークルＫ
+      '00005':  ミニストップ
+      '00006':  デイリーヤマザキ
+#      '00007':  セブンイレブン    
+
+  convenience_type_lawson:        '00001'
+  convenience_type_familymart:    '00002'
+  convenience_type_sunkus:        '00003'
+  convenience_type_circleksunkus: '00004'
+  convenience_type_ministop:      '00005'
+  convenience_type_dailyyamazaki: '00006'
+  convenience_type_seveneleven:   '00007'    
+
+  # 決済ステータス
+  payment_status:
+    array:
+      0: 未決済
+      1: 決済済
+      2: 入金待ち
+      3: 決済エラー
+      4: 入金期限切れ
+
+  payment_status_not_payed: 0
+  payment_status_payed:     1
+  payment_status_wait:      2
+  payment_status_error:     3
+  payment_status_cancel:    4
+
+  # 引き当てフラグ
+  apply_flag:
+    array:
+      0: 未引当て
+      1: 引当て済み
+
+  apply_flag_not_applyed: 0
+  apply_flag_applyed:     1
+
+  # コイン購入済フラグ
+  consume_flag:
+    array:
+      0: 未使用
+      1: 使用済
+
+  consume_flag_not_consumed:  0
+  consume_flag_consumed:      1
+  consume_flag_all:           2
+  
+  # 有効期限既読フラグ
+  expire_flag:
+    array:
+      0: 未読
+      1: 既読
+
+  expire_read_flag_not_read:  0
+  expire_read_flag_read:      1
+
+  # カード有効期限切れフラグ
+  expired_flag:
+    array:
+      0: 有効
+      1: 期限切れ
+
+  expired_flag_not_expired: 0
+  expired_flag_expired:     1
+  
+  # ポイント失効フラグ
+  losed_flag:
+    array:
+      0: 有効
+      1: 失効
+
+  losed_flag_not_losed: 0
+  losed_flag_losed:     1
+
+  # 使用ポイントキャンセルフラグ
+  use_point_expire_flag:
+    array:
+      0: 有効
+      1: キャンセル
+
+  use_point_expire_flag_not_expired: 0
+  use_point_expire_flag_expired:     1
+
+  # コンビニ決済ステータス
+  cvs_payment_status:
+    array:
+      10: 申込済
+      12: 支払期限切
+      40: 消込済
+      43: 速報検知済
+      61: 速報取消済
+
+  cvs_payment_status_mousikomizumi:       10
+  cvs_payment_status_kigengire:           12
+  cvs_payment_status_kesikomizumi:        40
+  cvs_payment_status_soku_kenchizumi:     43
+  cvs_payment_status_soku_torikesizumii:  61
+
+  # ネット決済ステータス
+  netbanking_payment_status:
+    array:
+      10: 申込済
+      15: 申込中断
+      40: 消込済
+
+  netbanking_payment_status_mousikomizumi:  10
+  netbanking_payment_status_chudan:         15
+  netbanking_payment_status_kesikomizumi:   40
+
+  # 期限切れアラートメール配信済みフラグ
+  limit_alert_mail_flag:
+    array:
+      0: 未配信
+      1: 配信済み
+
+  limit_alert_mail_flag_not_sent:   0
+  limit_alert_mail_flag_sent:       1
+
+  # お支払い期限(コンビニ/日) ※本番は6日（設定上は +5 day）
+  payment_limit_convenience:      + 5 day
+  payment_limit_convenience_day:  5
+
+  # 下限上限金額
+  creditcard:
+    max_price:     500000
+
+  netbanking:
+    minimum_price: 5000
+    max_price:     500000
+
+  payeasy:
+    minimum_price: 5000    # test 1500
+    max_price:     300000
+
+  convenience:
+    minimum_price: 5000    # test 1500
+    max_price:     300000
+
+  # 購入時期判定フラグ
+  order_date_all:       1
+  order_date_30_day:    2
+  order_date_60_day:    3
+  order_date_6_month:   4
+  
+  order_date_flag:
+    array:
+      1: 
+      2: -30 day
+      3: -60 day
+      4: -6 month
+
+  # 支払方法別明細数
+  payment_type_count:
+    array:
+      1: 3
+      2: 4
+      3: 0
+      4: 0
+
+  # ポイント種別フラグ
+  point_type_flag:
+    array:
+      0: 購入
+      1: キャンペーン
+      2: 管理画面
+
+  point_type_flag_order:      0
+  point_type_flag_campaign:   1
+  point_type_flag_admin:      2
+
+  # 注文番号桁数
+  order_no_length:   16 #15
+  
+  # 注文連番桁数
+  orders_seq_length: 15 
+
+  # カード失効予定日(アクティベートから6か月後)
+  expire_date_span:     +6 month
+  expire_date_span_jp:  6ヵ月
+  
+  # 有効期限アラート表示期間(今日から１ヶ月以内に期限を迎えるカード)
+  expire_read_alert_span:  +1 month
+  
+  # 最近購入した商品として表示する期間（1日以内）
+  recent_purchase_span:  -1 day
+
+  # 購入履歴でNEWマークを表示する期間（5日以内）
+  purchase_new_span:  -5 day
+
+  # ネット決済：画面切り替え時間(ミリ秒)
+  netbanking_jump_time:  2000
+
+  # 1商品注文MAX数
+  orders_max_count:  100
+
+  #========================================================
+  # ■バッチ
+  #========================================================
+  batch:
+    # ロックファイル名
+    lockfile_expirePayment: '.expirePayment.lock'
+    
+    # 何時間ロックファイルが残っていた場合にアラートメールを送るか
+    alert_span:         1
+
+    # 中断された決済を入金確認する期間
+    payment_check_span:  +10 day 
+  
+  # ================================================
+  # ■S3関連
+  # ================================================
+  s3:
+    bucket:             gftd.meprodfileserver
+    product_image_dir:  uploads/product
+
+  # ================================================
+  # ■管理画面
+  # ================================================
+  # フォルダ名
+  admin_folder_name:          admin
+  admin_csv_folder_name:      /csv
+
+  # 集計期間種別フラグ
+  span_flag:
+    array:
+      1: 日
+      2: 月
+      3: 年
+      
+  span_flag_day:    1
+  span_flag_month:  2
+  span_flag_year:   3 
+
+  # 集計種別フラグ
+  summary_type:
+    array:
+      1: 商品別
+      2: 仕入先別
+      3: 決済方法別
+      
+  summary_type_product:   1
+  summary_type_purchase:  2
+  summary_type_payment:   3
+
+  # 合計格納用に使用するID
+  summary_total_product_id: 0
+  summary_total_price:      0
+
+  # ポイント種別
+  pointdata_type_flag:
+    array:
+      1:  前期間繰越
+      2:  発行
+      3:  利用
+      4:  退会
+      5:  期限切れ
+      6:  翌期間繰越
+      
+  pointdata_type_flag_before:   1
+  pointdata_type_flag_issue:    2
+  pointdata_type_flag_use:      3
+  pointdata_type_flag_exit:     4
+  pointdata_type_flag_out:      5
+  pointdata_type_flag_next:     6
+  
+  # 集計対象
+  pointdata_target_id:
+    array:
+      0:    全体
+      1:    GREE
+      2:    mobage
+      3:    Ameba
+      4:    music.jp
+      100:  キャンペーン
+      
+  pointdata_target_id_all:        0
+  pointdata_target_id_gree:       1
+  pointdata_target_id_mobage:     2
+  pointdata_target_id_ameba:      3
+  pointdata_target_id_musicjp:    4
+  pointdata_target_id_campaign:   100
+  
+  # ポイント期限切れの際、-1で登録（ポイント集計用）=> use_point.orders_id
+  use_point_out_id:  -1
+  
+  # 指定期間最大値
+  span:
+    max_day:      31
+    max_month:    12
+    max_year:     10
+  
+  #========================================================
+  # ■その他
+  #========================================================
+  log:
+    level_info:     INFO
+    level_warning:  WARNING
+    level_error:    ERROR
+    
+  # 1日開始終了時間
+  day:
+    start_time:  00:00:00
+    end_time:    23:59:59
+  
+  # セッション
+  session_name:
+    member:   Member
+    orders:   Orders
+
+  # クッキー
+  cookie:
+    # ログイン保管用クッキー名
+    login_memory: login_memory
+
+    # ログイン保管用クッキー保存期間
+    login_memory_days: 30
+
+    # トップページ静的化用クッキー保管名
+    login_isAuthenticated:  login_isAuthenticated
+    login_member_id:        login_member_id
+    login_name:             login_name
+    login_point:            login_point
+    login_last_login:       login_last_login
+    login_rank:             login_rank
+    cart_item_count:        cart_item_count
+    recent_item:            recent_item
+
+    # 静的化用クッキー保存期間(1時間)
+    login_memory_hour: 1
+
+    # 前回PW要求時間保管用クッキー名
+    last_pw_key:  last_pw_date
+  
+    # 前回ログインからPW再要求しない時間（単位：分、本番：30分）
+    last_pw_time:   30 #2 #30 
+
+    # タイムアウト時間（単位：分、本番：15分）
+    timeout:        15 #1 #15 
+
+    # ブラウザ終了判定用クッキー名
+    browser_open:  browser_open
+
+    # クッキー書込み不可判定用クッキー
+    write_check:  write_check
+
+  # ================================================
+  # ■キャンペーン関連
+  # ================================================
+  campaign:
+  
+    # キャンペーン
+    id_array:
+      1: 入会キャンペーン(20130613-20130714)
+
+    # キャンペーン開催フラグ(0:開催前/開催終了 1:開催中) 
+    open_flag_array:
+      1: 0
+
+    open_flag_close:    0
+    open_flag_open:     1
+
+    # 獲得ポイント
+    point_array:
+      1: 50
